@@ -1,0 +1,28 @@
+{
+    "servers": {
+        "Calculator-STDIO": {
+            "command": "c:/Users/User/  Desktop/GenAI & LLM/AI-Agents/mcp-servers/.venv/Scripts/python.exe",
+            "args": [
+                "Scenario1/calculator.py"
+            ],
+        },
+        "Calculator-HTTP": {
+            "command": "c:/Users/User/Desktop/GenAI & LLM/AI-Agents/mcp-servers/.venv/Scripts/python.exe",
+            "args": [
+                "-m",
+                "uvicorn",
+                "Scenario2.calculator_api:app",
+                "--host",
+                "localhost",
+                "--port",
+                "8080"
+            ],
+        },
+        "FreeCodeCamp-Feed-STDIO": {
+            "command": "c:/Users/User/Desktop/GenAI & LLM/AI-Agents/mcp-servers/.venv/Scripts/python.exe",
+            "args": [
+                "Scenario3/feed_mcp.py"
+            ],
+        }
+    }
+}
