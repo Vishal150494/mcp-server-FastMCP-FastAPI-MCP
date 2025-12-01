@@ -66,5 +66,10 @@ def divide_numbers(x:float, y:float) -> dict[str, float]:
         raise ValueError("Cannot divide by zero")
     return {"Result": x / y}
 
+#2. Converting it to MCP
+mcp = FastApiMCP(app, name="Calculator MCP")
+mcp.mount_http()
+
+
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=8080)
