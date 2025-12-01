@@ -1,0 +1,14 @@
+{
+    "chat.mcp.serverSampling": {
+        "mcp-servers/.vscode/mcp.json: FreeCodeCamp-Feed-STDIO": {
+            "allowedModels": [
+                "copilot/gpt-4o"
+            ]
+        },
+        "mcp-servers/.vscode/mcp.json: Calculator-STDIO": {
+            "allowedModels": [
+                "copilot/gpt-5-mini"
+            ]
+        }
+    }
+}
