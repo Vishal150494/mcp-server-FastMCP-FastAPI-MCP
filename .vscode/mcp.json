@@ -1,7 +1,7 @@
 {
     "servers": {
         "Calculator-STDIO": {
-            "command": "c:/Users/User/  Desktop/GenAI & LLM/AI-Agents/mcp-servers/.venv/Scripts/python.exe",
+            "command": "c:/Users/User/Desktop/GenAI & LLM/AI-Agents/mcp-servers/.venv/Scripts/python.exe",
             "args": [
                 "Scenario1/calculator.py"
             ],
