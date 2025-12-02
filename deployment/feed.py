@@ -7,7 +7,6 @@ from fastmcp import FastMCP
 from dotenv import load_dotenv
 
 load_dotenv()
-load_dotenv()
 rss_url = os.getenv("RSS_URL", "")
 youtube_default = os.getenv("YOUTUBE_DEFAULT_URL", "")
 youtube_channel_id = os.getenv("YOUTUBE_CHANNEL_ID", "")
