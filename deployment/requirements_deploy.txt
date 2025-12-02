@@ -1,2 +1,3 @@
 fastmcp
 feedparser
+python-dotenv
