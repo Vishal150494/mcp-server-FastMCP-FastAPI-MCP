@@ -7,10 +7,10 @@ from fastmcp import FastMCP
 from dotenv import load_dotenv
 
 load_dotenv()
-rss_url = os.getenv("RSS_URL")
-youtube_default = os.getenv("YOUTUBE_DEFAULT_URL")
-youtube_channel_id = os.getenv("YOUTUBE_CHANNEL_ID")
-youtube_url = youtube_default + youtube_channel_id
+rss_url = os.getenv("RSS_URL", "")
+youtube_default = os.getenv("YOUTUBE_DEFAULT_URL", "")
+youtube_channel_id = os.getenv("YOUTUBE_CHANNEL_ID", "")
+youtube_url = (youtube_default + youtube_channel_id) if youtube_default and youtube_channel_id else ""
 
 
 mcp = FastMCP("FreeCodeCamp Feed Searcher")
